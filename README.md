@@ -34,18 +34,18 @@ Analyzed feature correlations to reduce multicollinearity, setting an upper corr
 ## Modeling Process
 1. **Decision Tree Regressor**:
    - **Initial Model**: MSE of 9.998
-   - **Tuned Model (GridSearchCV)**: Improved MSE but above target
+   - **Tuned Model (GridSearchCV)**: Improved MSE of 3.0744 but above target
 
 2. **Random Forest Regressor**:
-   - **Initial Model**: MSE of 6.084
-   - **Tuned Model (GridSearchCV)**: MSE reduced to 5.315
+   - **Initial Model**: MSE of 5.93
+   - **Tuned Model (GridSearchCV)**: MSE reduced to 5.976
 
 3. **Gradient Boosting Regressor**:
-   - **Initial Model**: MSE of 5.12
-   - **Tuned Model (RandomizedSearchCV)**: Achieved a final MSE of **1.4998**
+   - **Initial Model**: MSE of 2.075
+   - **Tuned Model (RandomizedSearchCV)**: Achieved a final MSE of **1.351**
 
 ## Best Model and Results
-The **Gradient Boosting Regressor with RandomizedSearchCV** proved to be the most effective model, achieving an MSE of **1.4998**, well below the target MSE of 3. This model provides accurate predictions for movie rental durations.
+The **Gradient Boosting Regressor with RandomizedSearchCV** proved to be the most effective model, achieving an MSE of **1.351**, well below the target MSE of 3. This model provides accurate predictions for movie rental durations.
 
 ## Installation
 1. Clone this repository:
